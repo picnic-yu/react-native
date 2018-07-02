@@ -16,6 +16,7 @@ import MyNotificationsScreen from '../MyNotificationsScreen';
 class MinePage extends Component{
     static navigationOptions = {
         title:'我的',
+        
         // drawerLabel: '我的',
         // Note: By default the icon is only shown on iOS. Search the  showIcon option below.
     //      drawerIcon: ({ tintColor }) => (

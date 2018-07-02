@@ -21,7 +21,12 @@ class HomePage extends React.Component{
         title: '首页',//设置标题内容
         header:{
             backTitle: ' ',//返回按钮标题内容（默认为上一级标题内容）
-        }
+        },
+        headerStyle :{
+            elevation: 8,
+            shadowOpacity: 0,
+            borderBottomWidth: 1,
+        },
     }
  
     constructor(props) {
@@ -45,7 +50,12 @@ class Mine extends React.Component {
         title: '我的信息',//设置标题内容
         header:{
             backTitle: ' ',//返回按钮标题内容（默认为上一级标题内容）
-        }
+        },
+        headerStyle :{
+            elevation: 1,
+            shadowOpacity: 0,
+            borderBottomWidth: 1,
+        },
     }
  
     constructor(props) {
@@ -91,9 +101,9 @@ const MainScreenNavigator = TabNavigator({
         activeTintColor: '#008AC9', // 文字和图片选中颜色
         inactiveTintColor: '#999', // 文字和图片默认颜色
         showIcon: true, // android 默认不显示 icon, 需要设置为 true 才会显示
-        indicatorStyle: {height: 0}, // android 中TabBar下面会显示一条线，高度设为 0 后就不显示线了
+        indicatorStyle: {height: 1}, // android 中TabBar下面会显示一条线，高度设为 0 后就不显示线了
         style: {
-            backgroundColor: '#fff', // TabBar 背景色
+            backgroundColor: 'skyblue', // TabBar 背景色
             height:60
         },
         labelStyle: {
@@ -105,7 +115,7 @@ const MainScreenNavigator = TabNavigator({
 const styles = StyleSheet.create({
     container:{
         flex: 1,
-        backgroundColor:'#fff'
+        backgroundColor:'#ccc'
     },
     icon: {
         height: 20,
